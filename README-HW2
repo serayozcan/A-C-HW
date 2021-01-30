@@ -1,0 +1,26 @@
+The main purpose of this project is creating program at OOP type for do the specialized tasks. OOP is a faster way of programming. The main aim of Object-oriented programming is to bind together the data and the methods that operate on them so that no other part of the code can access this data except that method. Therefore, Implementation and keeping the code running fast are among the general objectives of the assignment. At this project, there are several specific commands. The commands are:
+• s/S The user can enter the string
+• d/D n the n’th character is deleted from the string and the result is shown
+• p/P Program check whether the string is palindrome or not
+• r/R The string will be reversed and result is shown
+• f/F Program reverse the words and result is shown
+• i/I n <String> The <String> will be inserted after n’th position of the string and the result is shown
+• m/M The string will be capitalized and result is shown
+• o/O output string to screen
+• t/T <Pathname\FileName> The string is read from the file
+• w/W <Pathname\FileName> The string is written to the file
+• x/X Terminates the program
+Considering the referrals, I designed class which does every single command in itself. I used NetBeans IDE 12.0 to write and compile the code. Its name is Absurd. At the beginning of the main class, Absurd class is called. After calling, all parameters ready to use. Subsequently the Run method is called to import the data; Run method has the command checking structure inside. In this method, I used try-catch for catching errors and for loop to run until stopped by user. At this point I printed command list, users can select commands from the list. I called the Scanner class to get the entered line. I set it as readString. Then I put the value as a string into yourLine which is defined string. For controlling the command letter, I set string control object to receive only the first data. And to facilitate control I created command checking mechanism with Switch-Case structure. If there is valid command, appropriate method is called. But if there is no valid command, system turns with error. Different conditions are required in order to commands to be executed. For instance, method Insert can be used with stated input type. When there is an incorrect entry in the system, it is requested to be corrected with the error code. If the input is entered correctly, the desired method works and prints the result on the screen. After the Algorithm steps, I gave information about the use and calling of methods. If we want to examine the algorithmic structure of the system in general:
+1. Main class calls the Absurd for operating the methods.
+2. Absurd Class get ready to be used. At this point DataSet Class sets the all variable for Absurd.
+3. Main class calls the Run method.
+4. Run method starts the error checking and prints the command list.
+5. The user enters the command and the line she/he wants.
+6. Scanner readString takes line in and gives the yourLine as string object.
+7. control object takes the first element with substring method. In switch-case structure, commands letter described as lower case. So checking those, system transforms the first element to lower case.
+8. It checks the command is valid or not. If the command is valid, there is another checking for Delete, Invalid, Infile, Outfile methods. You can see it in detail in the method section.
+9. If there is invalid command or incorrect input, the code returns with an error.
+10. When all the necessary conditions for the commands are met, the method is called to perform the task.
+11. The method works with the necessary data and returns by printing the screen.
+12. When printing on the screen is completed, the system is ready to receive commands again.
+13. The system continues to run until the Close method or error occurs.
