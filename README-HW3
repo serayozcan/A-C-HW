@@ -1,0 +1,15 @@
+The main purpose of this project is creating database structure. A database is an organized collection of data, generally stored and accessed electronically from a computer system. 
+The program basically keeps a customer information and his/her trade information. In this system there is an interface, DB_Interface. There can be only abstract methods, not method body.
+In the DB_Interface, we have methods which are given below.
+
+o addCustomer -> add the customer object to the customer array.
+o getNewCustomer ->  gets an information of new customer from user. The information will contain Name, Surname and ID.
+o addNewItem ->  adds the new item to the linked list of corresponding array location which contains the ID. If ID is not found, IDNotFoundException has to be thrown.
+o getTotalTradeofCustomer ->  gets the ID of the user and finds the total amount of expenses of her/him and put the result on screen.
+o getTotalTrade ->  finds and shows the total amount of trades of the company.
+o listItems ->  list all the items that customer with ID to the screen.
+o search_Customer -> returns the customer object of ID
+o readFromFile -> read the trade text data from file.
+
+Considering the referrals, I designed the system which includes Item, Customer, DB_Interface, EEM480Database, and Main Class. 
+I used NetBeans IDE 12.0 to write and compile the code. There are several different methods and data processing way.
