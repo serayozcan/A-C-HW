@@ -1,0 +1,18 @@
+The main purpose of this project is learning hash data structure and applications. 
+Hashing is the name given to the process of creating a fixed-sized output from different-sized inputs. 
+And it is the way of storing data with less complexity. Therefore, usage of hash function is necessary and important even though some trade-offs. 
+Considering the given interface and structure, I designed a double hash algorithm which is an open access sub method.
+I used NetBeans IDE 12.0 to write and compile the code. Hashing algorithms basically aim to convert and record data into an index(key).
+In a Hash structure, data is stored in an array. The data stored in these array partitions is got mode according to the size of the array.
+If the part in array that corresponds to the calculated mode value is full, a collision occurs. 
+When this happens, each algorithm implements different methods for saving the data. 
+Here, the main aspect of the double hashing method is that it reduces the number of collisions.
+In my solution approach, there are two hash functions. 
+First, hashFunc1 calculates the total numeric value of the given data and generates the key. 
+Then, hashFunc2 returns step size. If the hash array partition we want to use is empty, the collision problem does not happen.
+But if the index values of two different data are the same, to choose another key, the second addition with step size is added and the mode operation is performed. 
+In this case, the system can take each appropriate place in hash array. The requirements of the hash array must be considered for the step size decision. 
+At this point, “return prime_number – key % prime_number;” is performed when calculating the hashFunc2 method. Here we should use prime number less than array size.
+In each element of hash array, the system renews the DataItem class. DataItem includes two variables; word and frequency. In word variable, the data is kept.
+Also frequency is used for the same ones from the data loaded into the hash table. It helps us know how many same data there are here. 
+In the code, there is an HW4_Interface and a HashTable class. Using the methods included in the interface, the system has been provided to work properly.
